@@ -28,7 +28,7 @@ export function DataTableToolbar<TData>({
           }
           className="h-8 sm:w-[150px] lg:w-[250px] w-full"
         />
-        <div className="space-x-2 flex w-full">
+        <div className="space-x-2 flex w-full sm:w-fit">
           {table.getColumn("status") && (
             <DataTableFacetedFilter
               column={table.getColumn("status")}
